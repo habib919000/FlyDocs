@@ -4,7 +4,7 @@ import { Feather, Menu, X, ArrowRight } from 'lucide-react';
 const links = [
   { label: 'Features', href: '#features' },
   { label: 'Why FlyDocs', href: '#why' },
-  { label: 'How it works', href: '#how' },
+  { label: 'How It Works', href: '#how' },
   { label: 'FAQ', href: '#faq' },
 ];
 
@@ -32,7 +32,7 @@ export default function Navbar() {
             <li key={l.href}>
               <a
                 href={l.href}
-                className="text-xs font-semibold uppercase tracking-wider text-slate-500 transition-colors hover:text-slate-900"
+                className="text-sm font-medium text-[#0F172B] transition-colors hover:text-brand"
               >
                 {l.label}
               </a>
@@ -41,8 +41,8 @@ export default function Navbar() {
         </ul>
 
         <div className="hidden items-center gap-4 md:flex">
-          <a href="#" className="text-xs font-semibold uppercase tracking-wider text-slate-500 hover:text-slate-900 transition-colors">
-            Sign in
+          <a href="#" className="text-sm font-medium text-[#0F172B] hover:text-brand transition-colors">
+            Sign In
           </a>
           <a href="#start" className="inline-flex h-8 items-center justify-center bg-brand text-white hover:bg-brand-hover px-4 text-xs font-semibold rounded-full transition duration-200">
             Start Free
@@ -69,7 +69,7 @@ export default function Navbar() {
                 <a
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className="flex h-10 items-center text-sm font-medium text-slate-600 hover:text-slate-900"
+                  className="flex h-10 items-center text-sm font-medium text-[#0F172B] hover:text-brand"
                 >
                   {l.label}
                 </a>

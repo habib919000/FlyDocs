@@ -11,7 +11,7 @@ export default function Hero() {
       className="relative overflow-hidden pt-24 min-h-screen flex flex-col justify-between"
       style={{ backgroundImage: 'url(/hero_bg.png)', backgroundSize: 'cover', backgroundPosition: 'center center' }}
     >
-      <div className="container-page relative z-10 pt-20 pb-16 text-center md:pt-24 md:pb-20">
+      <div className="container-page relative z-10 pt-20 text-center md:pt-24">
         <Reveal className="mx-auto max-w-3xl">
           <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-brand/30 bg-white/70 backdrop-blur-sm px-3 py-1 text-sm font-medium text-brand">
             <Sparkles size={16} strokeWidth={1.5} /> AI-native documentation
@@ -51,7 +51,7 @@ export default function Hero() {
 
         {/* Product preview screenshot */}
         <Reveal delay={120} className="mt-16 md:mt-24 relative z-10">
-          <div className="mx-auto max-w-5xl overflow-hidden rounded-xl border border-slate-200/60 shadow-2xl">
+          <div className="mx-auto max-w-5xl overflow-hidden rounded-t-xl border-t border-x border-b-0 border-slate-200/60 shadow-2xl">
             <img
               src="/flydocs-hero.png"
               alt="FlyDocs dashboard — manage docs, articles, and feedback in one place"

@@ -10,7 +10,7 @@ const personas = [
 
 export default function Audience() {
   return (
-    <section id="audience" className="section bg-[#FAFBFB] border-y border-slate-100">
+    <section id="audience" className="section bg-[#f8f8f8] border-y border-slate-100">
       <div className="container-page">
         <SectionHeading
           title="Built for Teams Without a Docs Team"
