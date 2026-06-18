@@ -82,6 +82,7 @@ export default function Footer() {
           </defs>
         </svg>
       </div>
+
       {/* Central CTA Heading and Buttons */}
       <div
         id="start"
@@ -136,9 +137,9 @@ export default function Footer() {
           {/* Links Columns */}
           {columns.map((col) => (
             <nav key={col.title} aria-label={col.title} className="col-span-1">
-              <h3 className="mb-4 text-sm font-semibold text-white">
+              <h5 className="mb-4 text-sm font-semibold text-white" style={{ fontFamily: 'Syne, sans-serif' }}>
                 {col.title}
-              </h3>
+              </h5>
               <ul className="space-y-3">
                 {col.links.map((link) => (
                   <li key={link.label}>
@@ -171,6 +172,16 @@ export default function Footer() {
             </a>
           </div>
         </div>
+      </div>
+
+      {/* Standalone FLYDOCS Watermark — bottom of footer */}
+      <div className="w-full overflow-hidden relative z-0 pointer-events-none select-none">
+        <span
+          className="block text-center font-bold text-[#5047E5] whitespace-nowrap leading-[0.75] tracking-[-0.04em] text-[20vw] opacity-[0.08]"
+          style={{ fontFamily: 'Syne, sans-serif' }}
+        >
+          FlyDocs
+        </span>
       </div>
     </footer>
   );
